@@ -18,8 +18,8 @@ services:
     networks:
       - nextcloud
     environment:
-      - MYSQL_ROOT_PASSWORD=limak120
-      - MYSQL_PASSWORD=limak120
+      - MYSQL_ROOT_PASSWORD="MYPASSWORD"
+      - MYSQL_PASSWORD="MYPASSWORD"
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
 
@@ -51,7 +51,7 @@ services:
       - proxy
     environment:
       - REDIS_HOST=redis
-      - MYSQL_PASSWORD=limak120
+      - MYSQL_PASSWORD="MYPASSWORD"
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
       - MYSQL_HOST=db
